@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Observation Puzzles</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="puzzle1">Puzzle #1</string>
+    <string name="puzzle2">Puzzle #2</string>
+    <string name="puzzle3">Puzzle #3</string>
+    <string name="puzzle1_instructions">Study the images below. You will be asked questions about
+        the colors, positions, shapes, and symbols.  Press GO when ready.</string>
+    <string name="go">GO</string>
+    <string name="back">Back</string>
+    <string name="red_square">red square</string>
+    <string name="yellow_circle">yellow circle</string>
+    <string name="orange_heart">orange heart</string>
+    <string name="grey_plus">grey plus</string>
+    <string name="green_triangle">green triangle</string>
+    <string name="dark_blue_star">dark blue star</string>
+    <string name="blue_arrow">blue arrow</string>
+    <string name="black_no">black no</string>
+    <string name="light_blue_cloud">light blue cloud</string>
+    <string name="playable_image">playable image</string>
+</resources>
