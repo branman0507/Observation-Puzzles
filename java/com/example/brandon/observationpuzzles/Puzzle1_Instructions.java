@@ -66,6 +66,8 @@ public class Puzzle1_Instructions extends AppCompatActivity {
         setContentView(R.layout.activity_puzzle1__instructions);
 
         final TextView instructions = (TextView) findViewById(R.id.pz1_instTV);
+        final TextView question1 = (TextView) findViewById(R.id.pz1_q1TV);
+
         Button pz1_backBtn = (Button) findViewById(R.id.pz1_backBtn);
         Button pz1_goBtn = (Button) findViewById(R.id.pz1_goBtn);
         redSquare = (ImageView) findViewById(R.id.redSquare);
@@ -77,6 +79,7 @@ public class Puzzle1_Instructions extends AppCompatActivity {
         blackNo = (ImageView) findViewById(R.id.blackNo);
         blueArrow = (ImageView) findViewById(R.id.blueArrow);
         darkBlueStar = (ImageView) findViewById(R.id.darkBlueStar);
+        //box = (ImageView) findViewById(R.id.box);
 
         // Get Screen Size
         WindowManager wm = getWindowManager();
@@ -105,15 +108,13 @@ public class Puzzle1_Instructions extends AppCompatActivity {
             public void onClick(View v) {
 
                 instructions.setVisibility(View.GONE);
-                for(int x=10; x>0; x--) {
-                    shuffle = true;
-                    try{
-                        Thread.sleep(100);
-                    }
-                    catch (InterruptedException ex){
-                        Thread.currentThread().interrupt();
-                    }
+
+                question1.setVisibility(View.VISIBLE);
+                for(int x=10; x>0; x--){
+                    ShuffleImages(2);
                 }
+                //SetPosition(box, 1);
+                //box.setVisibility(View.VISIBLE);
             }
         });
     }
@@ -286,6 +287,7 @@ public class Puzzle1_Instructions extends AppCompatActivity {
                 initialSetup = true;
             }
             else if(shuffle){
+
                 ShuffleImages(2);
                 shuffle = false;
             }

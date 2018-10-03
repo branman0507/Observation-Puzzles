@@ -6,6 +6,7 @@
     <string name="puzzle3">Puzzle #3</string>
     <string name="puzzle1_instructions">Study the images below. You will be asked questions about
         the colors, positions, shapes, and symbols.  Press GO when ready.</string>
+    <string name="puzzle1Q1">Which shape was originally in this spot?</string>
     <string name="go">GO</string>
     <string name="back">Back</string>
     <string name="red_square">red square</string>
@@ -18,4 +19,5 @@
     <string name="black_no">black no</string>
     <string name="light_blue_cloud">light blue cloud</string>
     <string name="playable_image">playable image</string>
+    <string name="highlighter">highlighter</string>
 </resources>

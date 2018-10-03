@@ -16,6 +16,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/puzzle1_instructions"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,5 +114,21 @@
         android:src="@drawable/light_blue_cloud"
         android:contentDescription="@string/playable_image"
         android:id="@+id/lightBlueCloud" />
+
+    <TextView
+        android:id="@+id/pz1_q1TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/puzzle1Q1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pz1_instTV" />
 
 </android.support.constraint.ConstraintLayout>
