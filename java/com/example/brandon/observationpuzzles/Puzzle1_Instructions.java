@@ -67,6 +67,7 @@ public class Puzzle1_Instructions extends AppCompatActivity {
 
         final TextView instructions = (TextView) findViewById(R.id.pz1_instTV);
         final TextView question1 = (TextView) findViewById(R.id.pz1_q1TV);
+
         Button pz1_backBtn = (Button) findViewById(R.id.pz1_backBtn);
         Button pz1_goBtn = (Button) findViewById(R.id.pz1_goBtn);
         redSquare = (ImageView) findViewById(R.id.redSquare);
@@ -107,13 +108,13 @@ public class Puzzle1_Instructions extends AppCompatActivity {
             public void onClick(View v) {
 
                 instructions.setVisibility(View.GONE);
+
                 question1.setVisibility(View.VISIBLE);
                 for(int x=10; x>0; x--){
                     ShuffleImages(2);
                 }
                 //SetPosition(box, 1);
                 //box.setVisibility(View.VISIBLE);
-
             }
         });
     }
@@ -287,6 +288,7 @@ public class Puzzle1_Instructions extends AppCompatActivity {
             }
             else if(shuffle){
 
+                ShuffleImages(2);
                 shuffle = false;
             }
         }
